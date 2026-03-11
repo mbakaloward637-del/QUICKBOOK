@@ -5,8 +5,11 @@ import { AuthPage } from './pages/AuthPage';
 import { SetupPage } from './pages/SetupPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { CustomersPage } from './pages/CustomersPage';
+import { VendorsPage } from './pages/VendorsPage';
 import { InvoicesPage } from './pages/InvoicesPage';
 import { ExpensesPage } from './pages/ExpensesPage';
+import { BankingPage } from './pages/BankingPage';
+import { ReportsPage } from './pages/ReportsPage';
 import { PlaceholderPage } from './pages/PlaceholderPage';
 import {
   Building2,
@@ -55,25 +58,15 @@ const Router: React.FC = () => {
     case 'customers':
       return <CustomersPage />;
     case 'vendors':
-      return (
-        <PlaceholderPage
-          title="Vendors"
-          description="Coming soon - Manage your vendor relationships"
-          icon={<Building2 className="w-12 h-12 mx-auto" />}
-        />
-      );
+      return <VendorsPage />;
     case 'invoices':
       return <InvoicesPage />;
     case 'expenses':
       return <ExpensesPage />;
+    case 'banking':
+      return <BankingPage />;
     case 'reports':
-      return (
-        <PlaceholderPage
-          title="Financial Reports"
-          description="Coming soon - Generate comprehensive financial reports"
-          icon={<BarChart3 className="w-12 h-12 mx-auto" />}
-        />
-      );
+      return <ReportsPage />;
     case 'settings':
       return (
         <PlaceholderPage
