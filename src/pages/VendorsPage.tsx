@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Building2, Plus, AlertCircle, Edit2, Trash2 } from 'lucide-react';
+import { Building2, Plus, AlertCircle, CreditCard as Edit2, Trash2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useCompany } from '../context/CompanyContext';
 import { Vendor } from '../lib/types';

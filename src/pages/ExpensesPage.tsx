@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { DollarSign, Plus, AlertCircle, Edit2, Trash2 } from 'lucide-react';
+import { DollarSign, Plus, AlertCircle, CreditCard as Edit2, Trash2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useCompany } from '../context/CompanyContext';
 import { Expense, ExpenseCategory, Vendor } from '../lib/types';
